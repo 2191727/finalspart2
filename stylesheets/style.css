@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #003049 29.27%, #457B9D 58.96%, #F5F5F5 100%);
+}
+
+/*------------------------------- LOGIN NOTIFICATION -----------------------------------*/
+/*Author/s: Allan Avila and Jemma Niduaza*/
+/*CSS fo the notification in the Login page is user inputs invalid credentials*/
+div#alert-danger {
+    font-size: 25px;
+    color: red;
+    background-color: rgb(253, 206, 206);
+    border-color: #f5c6cb;
+    border-width: 25vh;
+    border-top-color: #f1b0b7;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+body .notification {
+    top: 10px;
+    padding: 35px;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------------------------------------- LOGIN ---------------------------------------*/
+/*Author/s: Allan Avila and Jemma Niduaza*/
+/*CSS for the Login Page*/
+.containerlogin .content h2 {
+    font-size: 60px;
+}
+
+.text h2 {
+    font-size: 50px;
+    line-height: 1;
+}
+
+.text p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.container .form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 176px;
+    margin-bottom: 271.6px;
+    background: transparent;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #000000;
+    border: 2px solid lightblue;
+    background-color: #026ba3;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.container .form-box .img {
+    text-align: center;
+}
+
+.container .form-box .img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.form-box h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.form-box .input-box {
+    position: relative;
+    width: 100%;
+    min-height: 40px;
+    background: transparent;
+    border-bottom: 2px solid #000000;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 100%;
+    background: skyblue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+/*---------------------------------- FOOTER -------------------------------------*/
+/*Author/s: Jemma Niduaza*/
+/*CSS for the footer*/
+footer {
+    background-color: #D9EDFF;
+    padding: 20px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 151px;
+}
+
+.footer-image {
+    display: inherit;
+}
+
+.footer-image img {
+    width: 100%;
+    height: 100px;
+    padding-right: 10px;
+}
+
+footer h5 {
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    padding-right: 20px;
+}
+
+.footer-right {
+    border-left: 5px solid black;
+    height: 100px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 25px;
+}
+
+/*------------------------------- MEDIA QUERY -----------------------------------*/
+/*Author/s: Jemma Niduaza*/
+/*Media Query for the responsiveness of the application*/
+@media screen and (max-width: 768px) {
+    .container .form-box {
+        width: 90%;
+    }
+
+    footer,
+    .container .form-box {
+        margin-top: 67px;
+    }
+
+    .video {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        margin-top: -135px;
+    }
+
+    footer h5 {
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .footer-image {
+        flex: 0 0 auto;
+        margin-right: 10px;
+    }
+
+    .footer-image img {
+        width: 100%;
+        height: auto;
+        max-width: 100px;
+    }
+
+    footer h5 {
+        font-size: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-right {
+        font-size: 20px;
+        padding-left: 0;
+        padding-top: 10px;
+        border-left: none;
+        border-top: 5px solid black;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    footer h5 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    footer h5 {
+        font-size: 16px;
+    }
+
+    .footer-right {
+        font-size: 20px;
+        text-align: center;
+    }
+}

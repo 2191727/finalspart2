@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\contentmanager",
+    "\\contentmanager\\public",
+    "\\contentmanager\\public\\stylesheets",
+    "\\contentmanager\\uploads",
+    "\\contentmanager\\views",
+    "\\viewer"
+  ],
+  "SelectedNode": "\\contentmanager\\views\\live.ejs",
+  "PreviewInSolutionExplorer": false
+}
